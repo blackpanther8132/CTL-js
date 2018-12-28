@@ -3,8 +3,9 @@ function Person(name,age){
     this.page=age;
     this.details= function()
     {
-        var det=this.pname+" "+this.page;
-        console.log(det);
+    return this.pname + " " + this.page;
+      
     }
 }
-var Person = new Person("raju","22");
+var prson = new Person("raju","22");
+console.log(prson.details());
