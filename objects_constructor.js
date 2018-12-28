@@ -4,5 +4,5 @@ function person()
 }
 var Person = new person();
 var pr=new person();
-console.log(Person.pname);
-console.log(pr.pname);
+console.log(Person.pname);//Raju
+console.log(pr.pname);//Raju
