@@ -46,7 +46,7 @@ var books = function(){
 }
 books.prototype.details = function()
 {
-    console.log("action");
+    return "action";
 }
 var action = function(){
    
@@ -54,21 +54,25 @@ var action = function(){
 action.prototype=new books();
 action.prototype.details= function()
 {
-    console.log("300 w");
+    return "300 w";
 }
 var romantic = function(){
 }
 romantic.prototype=new books();
 romantic.prototype.details =function()
 {
-    console.log(" titanic ");
+  return " titanic ";
 }
 var harror = function()
 {
     
 }
 harror.prototype = new books();
+var BOOKS = [new books(), new action(),new romantic, new harror()];
 
+BOOKS.forEach(function(shape)
+{
+    console.log(shape.details());
+});
 
-console.log(action.details);
 
