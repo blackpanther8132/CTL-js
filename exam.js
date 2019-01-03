@@ -1,7 +1,16 @@
-function showName () {
-    console.log ("First Name: " + name);
-    var name = "Ford";
-    console.log ("Last Name: " + name);
+"use strict"
+class humans{
+    constructor(name,gender)
+    {
+        this.name=name;
+        this.gender=gender;
+        console.log(name+" "+gender);
     }
-    
-    showName (); 
+}
+class animals extends humans{
+    details(){
+    console.log(this.name);
+}
+}
+var ah=new animals("raju","male");
+ah.details();
